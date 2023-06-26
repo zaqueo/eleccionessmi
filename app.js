@@ -37,7 +37,12 @@ function hexToRgb(hex) {
       chartData: {
         labels: ["Boller", "Brus", "Chips", "Frukt", "Fisk", "Snop"],
         datasets: [{ data: [12, 9, 3, 5, 2, 15], borderWidth: 2 }]
-      }
+      },
+      // donut data
+      progressData :{
+        labels: ["Digitadas", "Pendientes"],
+        datasets: [{ data: [0,0], borderWidth: 2 }]
+      },
     },
     mounted() {
       this.fetchData(); // Fetch data on page load
