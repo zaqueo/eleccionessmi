@@ -1,0 +1,20 @@
+<!-- HTML5 BASE TEMPLATE-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Elecciones SMI 2023 por IO.GT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <vue-chart :data="chartData" :options="{scales: {yAxes: [{ticks: {beginAtZero: true}}]}}" :update-config="{duration: 800, easing: 'easeOutBounce'}" type="bar" />
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="https://unpkg.com/vuechart"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
